@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         Scene scene = SceneManager.GetSceneByName(level);
         if (scene.isLoaded == false)
         {
-            SceneManager.LoadScene(level, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(level, LoadSceneMode.Additive);
         }
     }
     public void unloadLevel(string level)
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         Scene scene = SceneManager.GetSceneByName(level);
         if (scene.isLoaded == true)
         {
-            SceneManager.UnloadScene(scene);
+            SceneManager.UnloadSceneAsync(scene);
         }
     }
 }

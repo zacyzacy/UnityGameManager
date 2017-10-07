@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayingState : GameState
 {
-   
+
     public override void enterState()
     {
         GameManager.instance.running = true;

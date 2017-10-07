@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     void Update()
     {
     }
-    
+
     //handle Inputs
     public void aPress()
     {

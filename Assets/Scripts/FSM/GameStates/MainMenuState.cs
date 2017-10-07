@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class StartScreenState : GameState
-{    
+{
     public override void enterState()
     {
         //Reset everything load new instance of game starting with start screen
