@@ -1,17 +1,18 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class StartScreenState : GameState
+public class MainMenuState : GameState
 {
     public override void enterState()
     {
-        //Reset everything load new instance of game starting with start screen
-        _gameStateFSM.ChangeState("PlayingState");
+        GameManager.instance.loadLevel("MainMenu");
     }
     public override void executeState()
     {
     }
     public override void exitState()
     {
+        GameManager.instance.unloadLevel("MainMenu");
     }
 }

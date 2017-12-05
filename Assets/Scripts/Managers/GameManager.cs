@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         gameStateMachine = GetComponent<FSM>();
-        loadLevel("StartScreen");
     }
     public void loadLevel(string level)
     {

@@ -7,4 +7,8 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void StartGame()
+    {
+        GameManager.instance.gameStateMachine.ChangeState("PlayingState");
+    }
 }

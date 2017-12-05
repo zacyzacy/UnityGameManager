@@ -3,9 +3,9 @@ using System.Collections;
 
 public class PlayingState : GameState
 {
-
     public override void enterState()
     {
+        GameManager.instance.loadLevel("level");
         GameManager.instance.running = true;
     }
     public override void executeState()

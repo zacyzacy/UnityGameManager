@@ -8,8 +8,7 @@ public class StartScreen : MonoBehaviour
     {
         if (Input.anyKeyDown == true)
         {
-            GameManager.instance.loadLevel("MainMenu");
-            GameManager.instance.unloadLevel("StartScreen");
+            GameManager.instance.gameStateMachine.ChangeState("MainMenuState");
         }
     }
 }

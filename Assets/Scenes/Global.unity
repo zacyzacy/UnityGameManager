@@ -118,9 +118,10 @@ GameObject:
   - component: {fileID: 889252745}
   - component: {fileID: 889252750}
   - component: {fileID: 889252749}
-  - component: {fileID: 889252748}
   - component: {fileID: 889252747}
   - component: {fileID: 889252746}
+  - component: {fileID: 889252748}
+  - component: {fileID: 889252751}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -178,7 +179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 889252744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 629476e52c5ba8e4cbcd436572bb2512, type: 3}
+  m_Script: {fileID: 11500000, guid: 303d4235b2f36d34384754e545b88c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isCurrentState: 0
@@ -195,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ec833ea17cb0642a674b430494a8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultState: {fileID: 889252748}
+  defaultState: {fileID: 889252751}
   currentState: {fileID: 0}
 --- !u!114 &889252750
 MonoBehaviour:
@@ -208,12 +209,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1833449a6152e4749885d9cd5f9f9990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  running: 1
+  running: 0
   musicVolume: 0
   gameVolume: 0
   gameStateMachine: {fileID: 0}
   player: {fileID: 0}
   inman: {fileID: 963988755}
+--- !u!114 &889252751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889252744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f99b6a161023643b7b0ed5e3e4a854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentState: 0
+  stateName: 
+  _gameStateFSM: {fileID: 0}
 --- !u!1 &963988753
 GameObject:
   m_ObjectHideFlags: 0

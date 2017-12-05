@@ -23,7 +23,7 @@ public class FSMState : MonoBehaviour
     }
     public virtual void executeState()
     {
-        //Happens every frame therefore less efficient
+        //Happens every frame
     }
     public virtual void exitState()
     {

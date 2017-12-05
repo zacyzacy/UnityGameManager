@@ -14,7 +14,7 @@ public class InputManager : MonoBehaviour
         //controls 0 = A, 1 = B, 2 = Start, 3 = Slect, 4 = Up, 5 = Down, 6 = Left, 7 = Right
         controls = new KeyCode[]
         {
-            KeyCode.A,KeyCode.S,KeyCode.Escape,KeyCode.Return,KeyCode.UpArrow,KeyCode.DownArrow,KeyCode.LeftArrow,KeyCode.RightArrow
+            KeyCode.Z,KeyCode.X,KeyCode.Escape,KeyCode.Return,KeyCode.UpArrow,KeyCode.DownArrow,KeyCode.LeftArrow,KeyCode.RightArrow
         };
     }
 
@@ -52,7 +52,7 @@ public class InputManager : MonoBehaviour
         //Start
         if (Input.GetKey(controls[2]))
         {
-
+            GameManager.instance.player.startPress();            
         }
         //Select
         if (Input.GetKey(controls[3]))
@@ -77,7 +77,7 @@ public class InputManager : MonoBehaviour
         //right
         if (Input.GetKey(controls[7]))
         {
-            GameManager.instance.player.bPress();
+            GameManager.instance.player.rightPress();
         }
         //todo wrapper for controller joystick
 
